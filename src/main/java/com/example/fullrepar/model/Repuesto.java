@@ -25,7 +25,9 @@ public class Repuesto {
     @Column(length = 500)
     private String descripcion;
 
+    @Lob    
     private String imagenUrl;
+
 
     @Builder.Default
     private Boolean disponible = true;
