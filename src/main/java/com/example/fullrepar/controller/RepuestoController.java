@@ -36,6 +36,7 @@ public class RepuestoController {
                     rep.setNombre(datos.getNombre());
                     rep.setEstado(datos.getEstado());
                     rep.setDescripcion(datos.getDescripcion());
+                    rep.setImagenUrl(datos.getImagenUrl());
                     rep.setDisponible(datos.getDisponible());
                     return ResponseEntity.ok(repuestoRepository.save(rep));
                 })
